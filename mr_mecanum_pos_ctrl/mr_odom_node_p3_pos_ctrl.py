@@ -88,7 +88,7 @@ class ODOM_Node_P2(Node): # <--- CHANGE ME
                           [self.phi_vel]]) 
         
         # position controller gain
-        Kp = np.diag([1.0, 0.5, 0.5])
+        Kp = np.diag([0.1, 0.5, 1.5])
         
         # position error
         e_eta = eta_d - self.eta

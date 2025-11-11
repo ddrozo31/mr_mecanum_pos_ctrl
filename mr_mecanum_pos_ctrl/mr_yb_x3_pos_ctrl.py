@@ -37,9 +37,9 @@ class mr_yb_x3_pos_ctrl(Node): # <--- CHANGE ME
         self.th4 = 0.0
 
         # position control variables
-        self.x_des = -1.0
-        self.y_des = 1.0
-        self.phi_des = 0.0
+        self.x_des = 0.0
+        self.y_des = 0.0
+        self.phi_des = np.pi/2
 
         # velocity control variables
         self.x_vel = 0.0
